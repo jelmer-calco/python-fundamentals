@@ -21,29 +21,28 @@
 # REVIEW EXERCISE - Demo
 # ------------------------------------------------------------
 
-student_name = "Lina"
-student_age = 28
-student_education = "Calco"
+
+name = "Mila"
+age = 20
 
 # List
-subjects = ["Python", "Data cruncher", "Ask like a detective"]
+hobbies = ["coding", "traveling", "cooking"]
+
 
 # Dictionary
 student = {
-    "name": student_name,
-    "age": student_age,
-    "education": student_education
+    # "naam van het vakje": waarde_die_erin_komt
+    # key : value 
+    "name": name,
+    "age": age,
+    "hobbies": hobbies,
 }
-
-print("Student:", student["name"])
-print("Education:", student["education"])
 # index starts at 0, so the first item is index 0
-print("First subject:", subjects[0])
+print (hobbies[0]) # print first hobby
+print (student["name"]) # print name from dictionary
 
-if student_age >= 18:
-    print(student_name, "is an adult")
-else:
-    print(student_name, "is not 18 yet")
+
+
 
 
 
@@ -73,10 +72,7 @@ else:
 # Demo 1 - For-loop with a list
 # ------------------------------------------------------------
 
-student_names = ["Ali", "Sara", "Noah", "Emma"]
 
-for student_name in student_names:
-    print("Welcome", student_name)
 
 
 # ------------------------------------------------------------
@@ -101,13 +97,7 @@ for student_name in student_names:
 # Demo 2 - For-loop with grades
 # ------------------------------------------------------------
 
-grades = [4, 7, 8, 5, 9]
 
-for grade in grades:
-    if grade >= 6:
-        print(grade, "is a passing grade")
-    else:
-        print(grade, "is a failing grade")
 
 
 # ------------------------------------------------------------
@@ -135,16 +125,12 @@ for grade in grades:
 # Demo 3 - Using range
 # ------------------------------------------------------------
 
-for number in range(5):
-    print("This is round", number)
 
 
 # ------------------------------------------------------------
 # Demo 4 - Range with start and stop
 # ------------------------------------------------------------
 
-for number in range(1, 6):
-    print("This is round", number)
 
 
 # ------------------------------------------------------------
@@ -166,14 +152,7 @@ for number in range(1, 6):
 # Demo 5 - Dictionary with .items()
 # ------------------------------------------------------------
 
-student = {
-    "name": "Mila",
-    "age": 20,
-    "education": "ICT"
-}
 
-for key, value in student.items():
-    print(key, ":", value)
 
 
 # ------------------------------------------------------------
@@ -202,11 +181,6 @@ for key, value in student.items():
 # Demo 6 - Function without parameter
 # ------------------------------------------------------------
 
-def say_hello():
-    print("Hello, welcome to the lesson!")
-
-
-say_hello()
 
 
 # ------------------------------------------------------------
@@ -231,12 +205,7 @@ say_hello()
 # Demo 7 - Function with parameter
 # ------------------------------------------------------------
 
-def greet_student(student_name):
-    print("Welcome", student_name)
 
-
-greet_student("Ali")
-greet_student("Sara")
 
 
 # ------------------------------------------------------------
@@ -263,15 +232,6 @@ greet_student("Sara")
 # Demo 8 - Function with return
 # ------------------------------------------------------------
 
-def add_numbers(number_1, number_2):
-    result = number_1 + number_2
-    return result
-
-
-answer = add_numbers(4, 6)
-
-print("The answer is:", answer)
-
 
 # ------------------------------------------------------------
 # Assignment 7
@@ -296,14 +256,6 @@ print("The answer is:", answer)
 # Demo 9 - Function that loops through a list
 # ------------------------------------------------------------
 
-def print_student_names(student_names):
-    for student_name in student_names:
-        print("Student:", student_name)
-
-
-student_names = ["Lina", "Mo", "Sven"]
-
-print_student_names(student_names)
 
 
 # ------------------------------------------------------------
