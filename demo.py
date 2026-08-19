@@ -313,26 +313,14 @@ age = 20
 # PART 9 - Demo 9
 # ------------------------------------------------------------
 
-# Function that loops through a list
+def print_student_names(student_names):
+    for student_name in student_names:
+        print("Student:", student_name)
 
 
-# ------------------------------------------------------------
-# PART 9 - Common mistake
-# ------------------------------------------------------------
+student_names = ["Lina", "Mo", "Sven"]
 
-# Changing the temporary loop variable does not change the original list.
-#
-# numbers = [1, 2, 3]
-#
-# for number in numbers:
-#     number = number + 10
-#
-# print(numbers)
-#
-# This still prints:
-# [1, 2, 3]
-#
-# number is only a temporary variable inside the loop.
+print_student_names(student_names)
 
 
 # ------------------------------------------------------------
